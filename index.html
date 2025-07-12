@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love from BTS 💜</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #fbeaff;
+      text-align: center;
+      padding: 50px;
+      color: #5a005a;
+    }
+    .note-box {
+      background: #ffffff;
+      padding: 30px;
+      border: 3px dashed #d37fd3;
+      border-radius: 20px;
+      max-width: 500px;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ae00ff;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #8700c9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💌 Love from BTS 💌</h1>
+  <div class="note-box" id="note">
+    Click the button below to receive a love note!
+  </div>
+  <button onclick="generateNote()">Get a Love Note 💜</button>
+
+  <script>
+    const notes = [
+      "🐻 Taehyung says: 'You’re doing well, even if you don’t see it. Trust me, okay?'",
+      "🐥 Jimin whispers: 'You are more precious than all the stars in the sky.'",
+      "🐨 Namjoon writes: 'The universe is lucky to have you in it.'",
+      "🐰 Jungkook smiles: 'Your efforts matter. I’m proud of you.'",
+      "🐱 Yoongi hums: 'Take a deep breath. You’re stronger than you think.'",
+      "🦄 Jin says: 'Worldwide Handsome thinks you’re Worldwide Amazing.'",
+      "🐿️ Hobi beams: 'Your smile is my sunshine. Keep shining!'",
+      "💜 BTS says: 'We purple you. Always.'",
+      "🐻 V: 'You look extra soft today. Drink some water and rest your soul.'",
+      "🐥 Jimin: 'You didn’t hear this today: You’re doing your best. And that’s enough.'",
+      "🐨 RM: 'Even when it’s dark, the moon is still out there – just like your light.'",
+      "🐰 JK: 'You’re not behind. You’re on your own journey. Trust the timing.'",
+      "🐱 Yoongi: 'Stay warm. And don’t forget to eat something comforting, okay?'",
+      "🦄 Jin: 'You are sparkling without even realizing it. That’s your magic.'",
+      "🐿️ Hobi: 'Here’s a smile from me to you 😁! You deserve 100 more today!'",
+      "💌 BTS: 'You might not see us, but we’re always rooting for you.'",
+      "🐥 Jimin: 'You’ve already survived 100% of your worst days. That’s superhero level.'",
+      "🐨 RM: 'Take your time. Flowers bloom in their own season. So will you.'",
+      "🐱 Yoongi: 'If all you did today was exist, I’m still proud of you.'",
+      "🐰 JK: 'It’s okay to cry. Stars need the night to shine, too.'",
+      "🦄 Jin: 'Who needs wings when you’re already this fabulous?'",
+      "🐿️ Hobi: 'You’re like sunshine mixed with a little bit of hurricane – powerful.'",
+      "🐻 V: 'The world is prettier with you in it. Period.'",
+      "🐥 Jimin: 'Let’s meet in our dreams and dance under purple skies.'",
+      "🐨 RM: 'Some days, surviving is winning. You’re doing amazing.'",
+      "🐱 Yoongi: 'Music heals, but your smile heals more. Don’t forget that.'",
+      "🐰 JK: 'You matter. You always did. You always will.'",
+      "🦄 Jin: 'Even your bad hair days are cute. Don’t argue.'",
+      "🐿️ Hobi: 'Hobi loves you. That’s it. That’s the whole message.'",
+      "💜 BTS: 'You are the reason we sing. Keep being our reason.'"
+    ];
+
+    function generateNote() {
+      const randomNote = notes[Math.floor(Math.random() * notes.length)];
+      document.getElementById('note').textContent = randomNote;
+    }
+  </script>
+
+</body>
+</html>
